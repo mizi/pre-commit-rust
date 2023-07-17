@@ -1,0 +1,15 @@
+- id: rustfmt
+  name: rustfmt
+  description: Format files using rustfmt
+  entry: rustfmt
+  language: rust
+  types: [rust, text]
+
+- id: clippy
+  name: clippy
+  description: Lint all files using clippy
+  entry: cargo clippy
+  language: rust
+  types: [rust, text]
+  pass_filenames: false
+  args: ["--", "--tests"]
