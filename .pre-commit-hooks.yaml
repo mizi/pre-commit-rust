@@ -12,4 +12,4 @@
   language: rust
   types: [rust, text]
   pass_filenames: false
-  args: ["--", "--tests"]
+  args: ["--tests", "--", "-D", "warnings"]
